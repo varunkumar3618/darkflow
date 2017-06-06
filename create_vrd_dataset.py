@@ -28,8 +28,6 @@ def convert_to_darkflow(data_dir, split):
         objs_list = json.load(f)
     idx_to_name = {idx: name for idx, name in enumerate(objs_list)}
 
-    if not os.path.isdir(images_dir):
-        os.mkdir(images_dir)
     if not os.path.isdir(anns_dir):
         os.mkdir(anns_dir)
 
